@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,16 +9,16 @@ export default function Home() {
       {/* Navigation - Property Loop Style */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
               PropertyLoop
             </div>
-          </div>
+          </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Home</a>
-            <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Product</a>
-            <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Sign Up</a>
-            <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Sign In</a>
+            <Link href="/" className="text-purple-600 dark:text-purple-400 font-semibold transition">Home</Link>
+            <Link href="/product" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Product</Link>
+            <Link href="/signup" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Sign Up</Link>
+            <Link href="/signin" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition">Sign In</Link>
           </div>
         </div>
       </nav>
@@ -197,10 +198,10 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-purple-400 transition">Home</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition">Product</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition">Sign Up</a></li>
-                <li><a href="#" className="hover:text-purple-400 transition">Sign In</a></li>
+                <li><Link href="/" className="hover:text-purple-400 transition">Home</Link></li>
+                <li><Link href="/product" className="hover:text-purple-400 transition">Product</Link></li>
+                <li><Link href="/signup" className="hover:text-purple-400 transition">Sign Up</Link></li>
+                <li><Link href="/signin" className="hover:text-purple-400 transition">Sign In</Link></li>
               </ul>
             </div>
             <div>
@@ -222,3 +223,4 @@ export default function Home() {
     </div>
   );
 }
+
