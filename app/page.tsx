@@ -11,7 +11,32 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              PropertyLoop
+            <div class="logo-container">
+        <div class="logo">
+            <div class="icon-wrapper">
+                <div class="circle-bg"></div>
+                <svg class="icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+         
+                    <path d="M30 12L15 24V45C15 46.1046 15.8954 47 17 47H25V35H35V47H43C44.1046 47 45 46.1046 45 45V24L30 12Z" 
+                          fill="#4A7BB7" stroke="#4A7BB7" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M30 12L12 27" stroke="#6B9BD6" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M30 12L48 27" stroke="#6B9BD6" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="19" y="29" width="5" height="5" rx="1" fill="white" opacity="0.7"/>
+                    <rect x="36" y="29" width="5" height="5" rx="1" fill="white" opacity="0.7"/>
+                    <path d="M50 15C50 15 52 13 54 15C56 17 56 19 54 21L51 24" 
+                          stroke="#6B9BD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M54 21L52 19L50 21" fill="#6B9BD6"/>
+                </svg>
+            </div>
+            <div class="text-wrapper">
+                <div>
+                    <span class="property">PROPERTY</span>
+                    <span class="loop">LOOP</span>
+                </div>
+                <div class="tagline">Real Estate Software For Real Agents</div>
+            </div>
+        </div>
+    </div>
             </div>
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
